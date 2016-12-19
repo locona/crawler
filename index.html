@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+		<link rel="stylesheet" media="all" type="text/css" href="style.css" />
+		<!-- ※デフォルトのスタイル（style.css） -->
+		<link rel="stylesheet" media="all" type="text/css" href="tablet.css" />
+		<!-- ※タブレット用のスタイル（tablet.css） -->
+		<link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+		<!-- ※スマートフォン用のスタイル（smart.css） -->
+		<title>芝浦工業大学 工学部 情報工学科</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.color.js"></script>
+		<script type="text/javascript" src="jquery.backgroundpos.js"></script>
+		<script type="text/javascript" src="jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+		<link rel="stylesheet" href="colorbox.css">
+		<link rel="stylesheet" href="flexslider.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<!-- カラーボックス -->
+		<script>
+			$(document).ready(function(){
+				$(".group01").colorbox();
+			});
+		</script>
+		<!-- カラーボックス -->
+		<!-- flexslider -->
+		<script type="text/javascript" charset="utf-8">
+			$(window).load(function() {
+			$('.flexslider').flexslider();
+			});
+		</script>
+		<!-- flexslider-->
+	</head>
+	<!-- 「トップへ戻る」ボタン -->
+	<div id="back-to-top" style="position:fixed;right:15px;bottom:30px"><a href="#"><img src="img/to_top.gif" /></a></div>
+	<script>
+		$(function(){
+			$("#back-to-top").hide();
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 300){
+						$("#back-to-top").fadeIn();
+				}	else{
+						$("#back-to-top").fadeOut();
+				}
+			});
+			$("#back-to-top a").click(function(){
+				$("body,html").animate({
+					scrollTop:0
+				},700);
+				return false;
+			});
+		});	
+	</script>
+	<!-- 「トップへ戻る」ボタン ここまで -->
+	<body>
+		<div id="wrapper">
+			<div id="contena" class="clearfix">
+				<header id="top"><img src="img/logo.png" width="175" height="40" alt="情報工学科"/> </header>
+				<div id="topNav">
+					<ul>
+						<li><a href="http://eecs.minet.se.shibaura-it.ac.jp/" target="_blank">大学院</a></li>
+						<li><a href="http://www.shibaura-it.ac.jp/faculty/engineering/index.html" target="_blank">工学部</a></li>
+						<li><a href="http://www.shibaura-it.ac.jp/" target="_blank">芝浦工業大学</a></li>
+					</ul>
+				</div>
+				<div id="box"></div>
+				<div id="mainNav">
+					<ul>
+						<li><a href="index.html" class="thispage">ホーム<br><span>HOME</span></a></li>
+						<li><a href="01.html">学科概要<br><span>Summary</span></a></li>
+						<li><a href="02.html">カリキュラム<br><span>Curriculum</span></a></li>
+						<li><a href="03.html">授業紹介<br><span>Class</span></a></li>
+						<li><a href="04.html">研究室紹介<br><span>Laboratory</span></a></li>
+						<li><a href="05.html">卒業後の進路<br><span>Course</span></a></li>
+						<li><a href="06.html">活動事例<br><span>Activities</span></a></li>
+						<li><a href="07.html">アクセス<br><span>Access</span></a></li>
+					</ul>
+				</div>
+				<div id="box"></div>
+				<div id="topimg-sma"></div>
+			</div>
+			<div id="topimg">
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="img/01_mini.jpg" /></li>
+						<li><img src="img/02_mini.jpg" /></li>
+						<li><img src="img/03_mini.jpg" /></li>
+						<li><img src="img/04_mini.jpg" /></li>
+						<li><img src="img/05_mini.jpg" /></li>
+					</ul>
+				</div>
+			</div>
+			<div id="contena" class="clearfix">
+				<article id="main">
+					<h5>大関教授最終講義のご案内</h5>
+					2016年3月12日（土）に
+					<a href="lastlec2016/">里帰りゼミおよび大関教授最終講義</a>
+					を開催しました。皆様ありがとうございました。
+					</br>
+					</br>
+					<h5>情報工学科設立15周年記念交流会</h5>
+					2015年11月14日（土）に
+					<a href="ise15th/">情報工学科設立15周年記念交流会</a>
+					を開催しました。皆様ありがとうございました。
+					</br>
+					</br>
+					<h5>特集記事</h5>
+					<div id="k-box">
+						<div class="pic"><img src="img/zu2001.jpg"  width="100%" alt=""/></div>
+						<p class="heading"><a href="01_02.html">情報女子</a></p>
+						<p class="text">情報工学科では、女子学生のキャリア形成を図るため、情報工学の基礎からモノづくりを通して細やかな指導を行っています。</p>
+					</div>
+					<div id="k-box">
+						<div class="pic"><img src="img/zu2002.jpg"  width="100%" alt=""/></div>
+						<p class="heading"><a href="01_03.html">対談（2014）</a></p>
+						<p class="text">女性教員として活躍されておられる菅谷先生と大倉先生に、女性エンジニアについて対談して頂きました。</p>
+					</div>
+					<div id="k-box">
+						<div class="pic"><img src="img/zu2003.jpg"  width="100%" alt=""/></div>
+						<p class="heading"><a href="01_04.html">対談（2008）</a></p>
+						<p class="text">2008年5月某日、人工知能の研究を行なっておられる五十嵐先生と杉本先生に、対談していただきました。</p>
+					</div>
+					<div id="box"></div>
+					</br>
+					</br>
+					<h5>豊洲校舎の様子</h5>
+					<div id="picBox"><a href="img/pic01.jpg" class="group01" title="豊洲校舎"><img src="img/pic01.jpg"  width="100%" alt=""/></a></div>
+					<div id="picBox"><a href="img/pic02.jpg" class="group01" title="豊洲校舎"><img src="img/pic02.jpg"  width="100%" alt=""/></a></div>
+					<div id="picBox"><a href="img/pic03.jpg" class="group01" title="豊洲校舎"><img src="img/pic03mini.jpg"  width="100%" alt=""/></a></div>
+					<div id="picBox"><a href="img/pic04.jpg" class="group01" title="豊洲校舎"><img src="img/pic04.jpg"  width="100%" alt=""/></a></div>
+					<div id="picBox"><a href="img/pic05.jpg" class="group01" title="豊洲校舎"><img src="img/pic05.jpg"  width="100%" alt=""/></a></div>
+					<div id="box"></div>
+				</article>
+				<aside id="sidebar">
+					<h6>information</h6>
+					<div id="bannerBox">
+						<a href="http://www.shibaura-it.ac.jp/request_brochure/index.html" target="_blank"><img src="img/banner/banner_brochure_2014.gif" width="168" height="58" alt=""/></a>
+						<a href="http://global.shibaura-it.ac.jp/ghrd-j/" target="_blank"><img src="img/banner/banner_global.gif" width="168" height="58" alt=""/></a>
+						<a href="http://www.shibaura-it.ac.jp/extra/innovation_girls/index.html?banner=00" target="_blank"><img src="img/banner/banner_innovation_girls.jpg" width="168" height="58" alt=""/></a>
+						<a href="http://www.shibaura-it.ac.jp/extra/sit_global_dormitory/index.html" target="_blank"><img src="img/banner/banner_sgd.gif" width="168" height="58" alt=""/></a>
+						<a href="http://www.shibaura-it.ac.jp/campuslife/activity/project/index.html?banner=00" target="_blank"><img src="img/banner/student_project.gif" width="168" height="58" alt=""/></a>
+						<a href="http://plus.shibaura-it.ac.jp/coc/" target="_blank"><img src="img/banner/banner-coc-k2.gif" width="168" height="58" alt=""/></a>
+					</div>
+				</aside>
+			</div>
+			<footer id="footer" class="clearfix">
+				<div class="containerF">
+					<div class="three-fourth">
+						<nav id="footer-nav" class="clearfix">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="pp.html">Privacy Policy</a></li>
+								<li><a href="sp.html">Site Policy</a></li>
+								<li><a href="sm.html">Site Map</a></li>
+								<li><a href="http://www.shibaura-it.ac.jp/about/privacypolicy/" target="_blank">個人情報保護方針</a></li>
+							</ul>
+						</nav>
+						<!-- end #footer-nav -->
+						<ul class="contact-info">
+							<li class="address png">東京都江東区豊洲3-7-5</li>
+							<li class="phone png">03-5859-8500</li>
+							<li class="email png"><a href="mailto:xxx@xxxx.jp">xxxx@xxxxxxxx.jp</a></li>
+							<li></li>
+						</ul>
+						<!-- end .contact-info --> 
+					</div>
+					<!-- end .three-fourth -->
+					<div class="one-fourth last">
+						<span class="title">Stay connected</span>
+						<!-- end .social-links --> 
+					</div>
+					<!-- end .one-fourth.last --> 
+				</div>
+				<!-- end .container --> 
+			</footer>
+			<!-- end #footer -->
+			<footer id="footer-bottom" class="clearfix">
+				<div class="containerF">
+					Copyright &copy; SHIBAURA INSTITUTE OF TECHNOLOGY, All Rights Reserved.
+				</div>
+				<!-- end .container --> 
+			</footer>
+		</div>
+	</body>
+</html>
